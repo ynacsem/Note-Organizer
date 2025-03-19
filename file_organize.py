@@ -135,3 +135,6 @@ async def upload_file(
         background_tasks.add_task(cleanup_files, ZIP_PATH, MAIN_FOLDER)
 
     return FileResponse(ZIP_PATH, media_type="application/zip", filename="organized_notes.zip")
+
+
+#python -m uvicorn file_organize:app --reload
