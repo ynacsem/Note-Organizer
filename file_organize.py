@@ -137,4 +137,4 @@ async def upload_file(
     return FileResponse(ZIP_PATH, media_type="application/zip", filename="organized_notes.zip")
 
 
-#python -m uvicorn file_organize:app --reload
+#python -m uvicorn file_organize:app --reload ds
